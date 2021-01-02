@@ -48,12 +48,13 @@
     flex-direction: column;
     padding-top: ;
     background: black;
-    padding: 48px 3px 0;
+    padding: 54px 3px 0;
 }
 
 
 .section__banner img{ 
   width: 100%;
+  height: 48vh;
 }
 .section__text{
     background:black;
@@ -90,15 +91,26 @@
 /* ===========================section---cards================================= */
 
 .section__container{
-    margin-top: 72px;
+    margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     justify-items:center ;
     text-align: center;
 }
-.sectin__cards--title {
-    font-weight: lighter;
+.section__cards--img{
+    margin: 20px 0;
 }
+
+.sectin__cards--title {
+    margin: 20px 0;
+}
+.section__cards--parraf{
+    padding: 0 20px;
+    font-size: 21px;
+    line-height: 1.3;
+}
+
+
 
 
