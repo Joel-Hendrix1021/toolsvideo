@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+ a{
+    text-decoration: none;
+    color:white;
+}
+.far{
+   display: block;
+   color:white;
+}
+.header__lenguage{
+    display:none;
+}
+.header__logo{
+    color:white;
+    font-size: 15px;
+}
+.main{
+     width: 100%;
+   
+      background: #0f171e;
+     padding: 8px 16px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      margin: 0;
+}
+.container {
+    padding: 10px 0px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+   
+}
+
+
+
+/* =========================header style -=============================*/
+.section{
+    display: flex;
+    flex-direction: column;
+    padding-top: ;
+    background: black;
+    padding: 48px 3px 0;
+}
+
+
+.section__banner img{ 
+  width: 100%;
+}
+.section__text{
+    background:black;
+    text-align: center;
+    padding: 5px 10px;
+    width: 100%;
+}
+.section__text--title { 
+    font-size: 32px;
+    color:white;
+}
+.section__text--parraf{
+   text-align:center;
+    font-size: 17px;
+    padding: 19px 0px;
+    color:white;
+
+}
+.section__text--btn{
+    background: cornflowerblue;
+    padding: 15px 20px;
+    font-size: 18px;
+    display: inline-block;
+    border-radius: 3px;
+    color:white;
+
+}
+.text{
+    font-size: 15px;
+    color:white;
+    
+}
+
+/* ===========================section---cards================================= */
+
+.section__container{
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items:center ;
+    text-align: center;
+}
+.sectin__cards--title {
+    font-weight: lighter;
+}
+
+
