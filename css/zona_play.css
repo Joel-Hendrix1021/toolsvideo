@@ -1,8 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
 }
  a{
     text-decoration: none;
@@ -16,14 +15,34 @@
     display:none;
 }
 .header__logo{
-    color:white;
+    color: rgba(242,244,246,.9);
     font-size: 15px;
+}
+.header__login--es{
+    font-weight: 100;
+    font-size:15px;
+    padding: 0 10px;
+    
+}
+.header__login{
+    display:flex;
+    justify-content: space-around;
+}
+.heaer__login--ident{
+    color: white;
+    display: none;
+}
+.fas {
+    color:white;
+    display:none;
+    font-size: 19px;
+    padding: 0 30px;
 }
 .main{
      width: 100%;
    
       background: #0f171e;
-     padding: 8px 16px;
+     padding: 17px 16px;
       position: fixed;
       top: 0;
       left: 0;
@@ -32,7 +51,8 @@
       margin: 0;
 }
 .container {
-    padding: 10px 0px;
+    
+    padding: 10px 10px;
     margin:auto;
     display: flex;
     justify-content: space-between;
@@ -48,34 +68,36 @@
     flex-direction: column;
     padding-top: ;
     background: black;
-    padding: 54px 3px 0;
+    padding: 50px 3px 0;
 }
 
 
 .section__banner img{ 
   /* recuerda quitar el height: ; */
   width: 100%;
-  height: 48vh;
+ 
 }
 .section__text{
-    background: black;
+    
     text-align: center;
     padding: 5px 10px;
     width: 100%;
     -webkit-box-shadow: 3px -49px 36px -2px rgba(0,0,0,0.91);
     -moz-box-shadow: 3px -49px 36px -2px rgba(0,0,0,0.91);
     box-shadow: 3px -49px 36px -2px rgba(0,0,0,0.91);
+    
 }
 .section__text--title { 
     font-size: 32px;
     color:white;
+    font-weight: 100;
 }
 .section__text--parraf{
    text-align:center;
     font-size: 17px;
     padding: 19px 0px;
     color:white;
-
+    font-weight: 100;
 }
 .section__text--btn{
     background: cornflowerblue;
@@ -97,7 +119,7 @@
 .section__container{
     margin-top: 60px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: center;
     justify-items:center ;
     text-align: center;
@@ -118,6 +140,7 @@
 /* =============footer ================= */
 
 .footer {
+    width: 100%;
     margin-top: 47px;
     background:#0f171e;
     text-align:center;
@@ -138,6 +161,92 @@
     font-size: 13px;
 }
 
+@media (min-width: 448px){
+    .far{
+        display: none;
+    }
+    .heaer__login--ident{
+        padding-top:2px;
+        display:block;
+        color: rgba(242,244,246,.9);
+    }
+    .fas {
+        display:block;
+    }
+}
 
+@media (min-width: 570px){
+    .section {
+        flex-direction: ;
+        position: relative;
+        background: black;
+    }
+    .section__banner{
+        position: absolute;
+       
+    }
+    .section__text{
+         position: relative;
+        padding-top:70px;
+        z-index:100;
+        display: block;
+        width: 50%;
+        height: 90vh;
+        background-image: linear-gradient(to right, #000 81%, transparent 100%);
+        padding-left: 40px;
+        text-align:left;
+        box-shadow: none;
+    }
+    .section__banner img{
+        object-fit: cover;
+        height: 90vh;
+    }
+    .section__text--title{
+        font-size:40px;
+        font-weight:100;
+       
+    }
+    .section__text--parraf{ 
+       text-align: left;
+       margin-bottom: 25px;
+       padding-right: 20px;
+       line-height: 1.4;
+       margin-top: 10px;
+       font-size: 21px;
+    }
+    .section__text--btn{
+        text-align: center;
+        padding: 15px 15px;
+        font-size: 17px;
+         
+    }
+    .text{
+        padding-right: 60px;
+        font-size: 15px;
+        margin: 0 0;
+    }
+    .section__container {
+        flex-direction: row;
+        flex-wrap:nowrap;
+        width: 100%;
+    }
+    .section__cards{
+        width: 28%;
+    }
+    .sectin__cards--title{
+        font-size:36px;
+        font-weight: 100;
+    }
+    .section__cards--img{
+        width:96%;
+    }
+    .footer{
+        padding:20px;
+        padding-bottom: 40px;
+    }
+    
+}
 
+    
+    
 
